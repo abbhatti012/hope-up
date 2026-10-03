@@ -63,7 +63,6 @@ Before running the project, make sure you have:
 
    ```bash
    git clone <repository-url>
-   cd doctor
    ```
 
 2. Install PHP dependencies:
@@ -72,13 +71,7 @@ Before running the project, make sure you have:
    composer install
    ```
 
-3. Install frontend dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Create your environment file:
+3. Create your environment file:
 
    ```bash
    cp .env.example .env
@@ -86,13 +79,13 @@ Before running the project, make sure you have:
 
    If the project does not include a `.env.example` file in your environment, create a `.env` file manually and add your database and app settings.
 
-5. Generate the application key:
+4. Generate the application key:
 
    ```bash
    php artisan key:generate
    ```
 
-6. Configure your database in `.env`:
+5. Configure your database in `.env`:
 
    ```env
    DB_CONNECTION=mysql
@@ -103,7 +96,7 @@ Before running the project, make sure you have:
    DB_PASSWORD=
    ```
 
-7. Run database migrations and seeders:
+6. Run database migrations and seeders:
 
    ```bash
    php artisan migrate
@@ -112,19 +105,7 @@ Before running the project, make sure you have:
 
    If the app has a custom seeder or requires a specific class, run the matching command from the project docs or the seeder files under `database/seeds`.
 
-8. Build frontend assets:
-
-   ```bash
-   npm run dev
-   ```
-
-   For production builds:
-
-   ```bash
-   npm run prod
-   ```
-
-9. Start the application:
+7. Start the application:
 
    ```bash
    php artisan serve
@@ -151,20 +132,6 @@ This project includes queue-based jobs for notifications and background processi
 ```bash
 php artisan queue:work
 ```
-
-## Environment Configuration
-
-Update these values in your `.env` file depending on your installation:
-
-- `APP_NAME`
-- `APP_ENV`
-- `APP_KEY`
-- `APP_DEBUG`
-- `APP_URL`
-- `DB_*`
-- `MAIL_*`
-- `STRIPE_*`
-- `TWILIO_*`
 
 ## License
 
