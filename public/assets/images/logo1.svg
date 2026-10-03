@@ -1,0 +1,18 @@
+<svg width="160" height="40" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heart with upward arrow -->
+  <path d="M40,20
+           C40,5 60,5 60,20
+           C60,35 40,55 40,55
+           C40,55 20,35 20,20
+           C20,5 40,5 40,20
+           Z" fill="white"/>
+  <polygon points="35,37 45,37 45,18 50,18 40,5 30,18 35,18" fill="white"/>
+
+  <!-- Hope Up text -->
+  <text x="70" y="35" font-size="28" font-family="Arial, sans-serif" fill="white" font-weight="bold">
+    HOPE
+  </text>
+  <text x="70" y="65" font-size="28" font-family="Arial, sans-serif" fill="white" font-weight="bold">
+    UP
+  </text>
+</svg>

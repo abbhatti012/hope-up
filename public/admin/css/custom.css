@@ -1,0 +1,110 @@
+#calendar {
+    width: 100%;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.fc-event, .fc-event-dot {
+    background-color: #ffffff !important;
+}
+
+.fc-event {
+    line-height: 2.5;
+    border-color: #6C9B41;
+    border-width: 3px;
+    border-left-width: 10px;
+    line-height: 2.5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #000000;
+}
+
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+    border-color: transparent;
+}
+
+.fc-content span {
+    display: block;
+    line-height: 1.5;
+}
+
+.fc-content .fc-time {
+    font-size: 1em;
+    color: #888888;
+}
+
+.fc-content .fc-cell-description {
+    text-align: center;
+}
+
+.fc-event:hover .fc-content .fc-time {
+    color: #888888;
+}
+.fc-event:hover .fc-content .fc-title {
+    color: #000000;
+}
+
+.fc-time-area .fc-rows td > div {
+    background-color: #e7f4f2;
+    min-height: 60px;
+}
+
+.fc-time-area .fc-rows td > div .fc-event-container {
+    min-height: 60px;
+}
+
+.fc-event[href], .fc-event.fc-draggable {
+    cursor: move;
+}
+
+.fc-time-area.fc-widget-header .fc-cell-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.fc-time-area.fc-widget-header .fc-cell-text {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #1bAAC3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.fc-cell-text {
+    text-align: center !important;
+}
+
+.fc-time-area .fc-scroller-canvas {
+    background: #e7f4f2;
+}
+
+.fc-time-area .fc-scroller-canvas .fc-widget-content {
+    border-bottom-color: white;
+}
+
+.fc-toolbar h2 {
+    display: inline-block;
+}
+
+.fc-resource-area .fc-widget-content > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-effect {
+    display: none;
+}
+
+.fc-prev-button, .fc-next-button {
+    bottom: 5px !important;
+}
+
+.fc-left h2 {
+    font-size: 25px !important;
+    padding: 5px 10px 0px 10px !important;
+}
+
+img {
+    cursor: pointer;
+}

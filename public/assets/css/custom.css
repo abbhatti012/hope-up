@@ -1,0 +1,184 @@
+.btn-action i {
+    font-size: 1rem;
+    line-height: 1.25;
+}
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+.action-buttons {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: nowrap;
+}
+
+/* Chart Spinner Styles */
+.chart-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.chart-spinner .spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #116AEF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Make chart containers relative for spinner positioning */
+.chart-container {
+  position: relative;
+}
+
+/* Ensure charts have proper positioning for spinner overlay */
+#appointments, #patients, #treatment-types, #genderAge, #isMilitantPatients {
+  position: relative;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* Admin Search Styles */
+/* Default search container width */
+.search-container {
+  position: relative;
+  min-width: 300px;
+  width: 240px;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+/* Expand on focus */
+.search-container:focus-within {
+  width: 50vw;
+  min-width: 400px;
+  max-width: 700px;
+  z-index: 1051;
+}
+
+/* Make dropdown match input width */
+.search-results-container,
+.search-suggestions-container {
+  width: 100% !important;
+  min-width: 0;
+  left: 0;
+  right: 0;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.search-container input {
+  padding-right: 40px;
+  border-radius: 20px;
+  border: 1px solid #e3e6f0;
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #116AEF;
+  box-shadow: 0 0 0 0.2rem rgba(17, 106, 239, 0.25);
+}
+
+.search-results-container,
+.search-suggestions-container {
+  border: 1px solid #e3e6f0;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.search-result-item,
+.suggestion-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover,
+.suggestion-item:hover,
+.search-result-item.selected,
+.suggestion-item.selected {
+  background-color: #f8f9fa;
+}
+
+.search-result-item:last-child,
+.suggestion-item:last-child {
+  border-bottom: none !important;
+}
+
+.search-category {
+  background-color: #f8f9fa;
+}
+
+.search-category h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.search-results-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Loading animation */
+.search-loading {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* No results styling */
+.search-no-results {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container,
+  .search-container:focus-within {
+    width: 100vw !important;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  
+  .search-results-container,
+  .search-suggestions-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.search-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  font-weight: 600;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-height: 36px;
+}
